@@ -1,5 +1,7 @@
 def gcd(a,b):           #функция вычисления НОДа по алгоритму Евклида
-    if b%a==0:
+    if a==0:
+        return 0
+    elif b%a==0:
         return a
     else:
         r=b-int(b/a)*a
